@@ -1,6 +1,7 @@
 package modelo;
 
 import processing.core.PApplet;
+import java.util.Random;
 public class Cuadrado extends Figura {	
 	
 	
@@ -22,6 +23,12 @@ public class Cuadrado extends Figura {
 		
 	}//PARARFIGURA
 	
+	public void crearFigura () {
+		
+		int random= (int) (Math.random() * (80 - 30 + 1) + 30);
+		
+	} //CREARFIGURA 
+	
 	public void renderCuadrado (int posX, int posY, int tam, int dir) {
 		
 		Sketch.fill (149, 170, 204);
@@ -29,4 +36,6 @@ public class Cuadrado extends Figura {
 		Sketch.rect (posX, posY, tam, tam );
 		
 	} //RENDERCUADRADO
+	
+	
 } //CUADRADO

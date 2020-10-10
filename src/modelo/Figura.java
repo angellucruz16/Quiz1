@@ -11,5 +11,15 @@ public class Figura extends PApplet {
 
 		
 	}//CONSTRUCTOR
+		public void pararFigura () {
+			
+			Sketch.translate(posX, posY);
+			
 		
-} //FIGURA
+} //PARARFIGURA
+		
+		public void crearFigura () {
+			
+			
+		} //CREARFIGURA 
+}	//FIGURA
